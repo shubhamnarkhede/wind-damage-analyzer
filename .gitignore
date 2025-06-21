@@ -1,0 +1,108 @@
+# Terraform files (these are generated and contain sensitive info)
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+*.tfvars.json
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Lambda deployment package (generated during deployment)
+lambda.zip
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Backup files
+*.bak
+*.backup
+
+# AWS credentials and config
+.aws/
+aws.config
+
+# Python cache and compiled files
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Python dependencies (installed packages)
+boto3/
+boto3-*/
+botocore/
+botocore-*/
+requests/
+requests-*/
+urllib3/
+urllib3-*/
+certifi/
+certifi-*/
+charset_normalizer/
+charset_normalizer-*/
+idna/
+idna-*/
+jmespath/
+jmespath-*/
+python_dateutil/
+python_dateutil-*/
+s3transfer/
+s3transfer-*/
+six.py
+six-*/
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Node modules (if any) 

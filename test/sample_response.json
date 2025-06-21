@@ -1,0 +1,26 @@
+{
+  "claim_id": "CLM-2025-00123",
+  "source_images": {
+    "total": 10,
+    "analyzed": 10,
+    "discarded_low_quality": 2,
+    "clusters": 5
+  },
+  "overall_damage_severity": 3.4,
+  "areas": [
+    {
+      "area": "roof",
+      "damage_confirmed": true,
+      "primary_peril": "wind",
+      "count": 4,
+      "avg_severity": 3.1,
+      "representative_images": [
+        "https://example.com/img004.jpg"
+      ],
+      "notes": "Shingle uplift along ridge"
+    }
+  ],
+  "data_gaps": ["No attic photos"],
+  "confidence": 0.87,
+  "generated_at": "2025-04-02T00:24:18Z"
+} 

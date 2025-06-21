@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM-2025-00123",
+  "loss_type": "wind",
+  "images": [
+    "https://example.com/img001.jpg",
+    "https://example.com/img002.jpg",
+    "https://example.com/img003.jpg",
+    "https://example.com/img004.jpg",
+    "https://example.com/img005.jpg",
+    "https://example.com/img006.jpg",
+    "https://example.com/img007.jpg",
+    "https://example.com/img008.jpg",
+    "https://example.com/img009.jpg",
+    "https://example.com/img010.jpg"
+  ]
+} 
