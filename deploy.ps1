@@ -25,9 +25,18 @@ if ($LASTEXITCODE -ne 0) {
 
 Write-Host "✅ Lambda package created successfully" -ForegroundColor Green
 
-# Step 3: Deploy with Terraform
-Write-Host "🌍 Deploying with Terraform..." -ForegroundColor Yellow
+# Step 3: Initialize Terraform
+Write-Host "🔧 Initializing Terraform..." -ForegroundColor Yellow
 Set-Location iac
+terraform init
+
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "❌ Terraform initialization failed" -ForegroundColor Red
+    exit 1
+}
+
+# Step 4: Deploy with Terraform
+Write-Host "🌍 Deploying with Terraform..." -ForegroundColor Yellow
 terraform apply -auto-approve
 
 if ($LASTEXITCODE -ne 0) {

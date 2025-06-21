@@ -27,9 +27,18 @@ fi
 
 echo "✅ Lambda package created successfully"
 
-# Step 3: Deploy with Terraform
-echo "🌍 Deploying with Terraform..."
+# Step 3: Initialize Terraform
+echo "🔧 Initializing Terraform..."
 cd iac
+terraform init
+
+if [ $? -ne 0 ]; then
+    echo "❌ Terraform initialization failed"
+    exit 1
+fi
+
+# Step 4: Deploy with Terraform
+echo "🌍 Deploying with Terraform..."
 terraform apply -auto-approve
 
 if [ $? -ne 0 ]; then
